@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graf"
+    app:startDestination="@id/fragment1_titleScrean">
+
+    <fragment
+        android:id="@+id/fragment1_titleScrean"
+        android:name="com.rocio.poma.actividad10_navigationcomponent.Fragment1_titleScrean"
+        android:label="fragment_fragment1_title_screan"
+        tools:layout="@layout/fragment_fragment1_title_screan" >
+        <action
+            android:id="@+id/action_next_Register"
+            app:destination="@id/fragment2_Register" />
+        <action
+            android:id="@+id/action2Nexr_leaderboard"
+            app:destination="@id/fragment3_leaderboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment2_Register"
+        android:name="com.rocio.poma.actividad10_navigationcomponent.Fragment2_Register"
+        android:label="fragment2_register"
+        tools:layout="@layout/fragment2_register" >
+        <action
+            android:id="@+id/action3Next_Ingame"
+            app:destination="@id/fragment4_match" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment3_leaderboard"
+        android:name="com.rocio.poma.actividad10_navigationcomponent.Fragment3_leaderboard"
+        android:label="fragment3_leaderboard"
+        tools:layout="@layout/fragment3_leaderboard" >
+        <action
+            android:id="@+id/action4Next_userProfile"
+            app:destination="@id/fragment5_userPrifile" />
+        <action
+            android:id="@+id/action5Next_resultWinner"
+            app:destination="@id/fragment6_resultsWinner" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment4_match"
+        android:name="com.rocio.poma.actividad10_navigationcomponent.Fragment4_match"
+        android:label="fragment4_match"
+        tools:layout="@layout/fragment4_match" >
+        <action
+            android:id="@+id/action6Next_inGame"
+            app:destination="@id/fragment7_inGame" />
+        <action
+            android:id="@+id/action9Next_gameOver"
+            app:destination="@id/fragment8_gameOver" />
+        <action
+            android:id="@+id/action7_resulW"
+            app:destination="@id/fragment6_resultsWinner" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment5_userPrifile"
+        android:name="com.rocio.poma.actividad10_navigationcomponent.Fragment5_userPrifile"
+        android:label="fragment_fragment5_user_prifile"
+        tools:layout="@layout/fragment_fragment5_user_prifile" />
+    <fragment
+        android:id="@+id/fragment6_resultsWinner"
+        android:name="com.rocio.poma.actividad10_navigationcomponent.Fragment6_resultsWinner"
+        android:label="fragment_fragment6_results_winner"
+        tools:layout="@layout/fragment_fragment6_results_winner" />
+    <fragment
+        android:id="@+id/fragment7_inGame"
+        android:name="com.rocio.poma.actividad10_navigationcomponent.Fragment7_inGame"
+        android:label="fragment_fragment7_in_game"
+        tools:layout="@layout/fragment_fragment7_in_game" >
+        <action
+            android:id="@+id/action10Next_gameOver"
+            app:destination="@id/fragment8_gameOver" />
+        <action
+            android:id="@+id/action8_resultsWinner"
+            app:destination="@id/fragment6_resultsWinner" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment8_gameOver"
+        android:name="com.rocio.poma.actividad10_navigationcomponent.Fragment8_gameOver"
+        android:label="fragment_fragment8_game_over"
+        tools:layout="@layout/fragment_fragment8_game_over" />
+</navigation>
